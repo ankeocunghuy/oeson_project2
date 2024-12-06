@@ -1,0 +1,244 @@
+K: 0.9
+M: 0.8
+ORIGINAL QUEUE: [Node(axis='vertical_fill', path_cost=0, heuristic_cost=5, place=PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5)), actions=[PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5))], board={Coord(r=0, c=6): <PlayerColor.BLUE: 1>, Coord(r=0, c=7): <PlayerColor.BLUE: 1>, Coord(r=1, c=4): <PlayerColor.BLUE: 1>, Coord(r=1, c=6): <PlayerColor.BLUE: 1>, Coord(r=1, c=7): <PlayerColor.BLUE: 1>, Coord(r=2, c=4): <PlayerColor.BLUE: 1>, Coord(r=2, c=6): <PlayerColor.BLUE: 1>, Coord(r=2, c=7): <PlayerColor.BLUE: 1>, Coord(r=3, c=4): <PlayerColor.BLUE: 1>, Coord(r=3, c=6): <PlayerColor.BLUE: 1>, Coord(r=4, c=4): <PlayerColor.BLUE: 1>, Coord(r=4, c=6): <PlayerColor.BLUE: 1>, Coord(r=5, c=4): <PlayerColor.BLUE: 1>, Coord(r=5, c=5): <PlayerColor.RED: 0>, Coord(r=5, c=6): <PlayerColor.BLUE: 1>, Coord(r=6, c=4): <PlayerColor.BLUE: 1>, Coord(r=6, c=6): <PlayerColor.BLUE: 1>, Coord(r=7, c=4): <PlayerColor.BLUE: 1>, Coord(r=7, c=6): <PlayerColor.BLUE: 1>, Coord(r=7, c=7): <PlayerColor.BLUE: 1>, Coord(r=8, c=4): <PlayerColor.BLUE: 1>, Coord(r=8, c=6): <PlayerColor.BLUE: 1>, Coord(r=8, c=7): <PlayerColor.BLUE: 1>, Coord(r=9, c=4): <PlayerColor.BLUE: 1>, Coord(r=9, c=7): <PlayerColor.BLUE: 1>, Coord(r=10, c=4): <PlayerColor.BLUE: 1>, Coord(r=10, c=6): <PlayerColor.BLUE: 1>, Coord(r=10, c=7): <PlayerColor.BLUE: 1>}, parent_cell=Coord(r=5, c=5), parent_node=None), Node(axis='horizontal_fill', path_cost=0, heuristic_cost=9, place=PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5)), actions=[PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5))], board={Coord(r=0, c=6): <PlayerColor.BLUE: 1>, Coord(r=0, c=7): <PlayerColor.BLUE: 1>, Coord(r=1, c=4): <PlayerColor.BLUE: 1>, Coord(r=1, c=6): <PlayerColor.BLUE: 1>, Coord(r=1, c=7): <PlayerColor.BLUE: 1>, Coord(r=2, c=4): <PlayerColor.BLUE: 1>, Coord(r=2, c=6): <PlayerColor.BLUE: 1>, Coord(r=2, c=7): <PlayerColor.BLUE: 1>, Coord(r=3, c=4): <PlayerColor.BLUE: 1>, Coord(r=3, c=6): <PlayerColor.BLUE: 1>, Coord(r=4, c=4): <PlayerColor.BLUE: 1>, Coord(r=4, c=6): <PlayerColor.BLUE: 1>, Coord(r=5, c=4): <PlayerColor.BLUE: 1>, Coord(r=5, c=5): <PlayerColor.RED: 0>, Coord(r=5, c=6): <PlayerColor.BLUE: 1>, Coord(r=6, c=4): <PlayerColor.BLUE: 1>, Coord(r=6, c=6): <PlayerColor.BLUE: 1>, Coord(r=7, c=4): <PlayerColor.BLUE: 1>, Coord(r=7, c=6): <PlayerColor.BLUE: 1>, Coord(r=7, c=7): <PlayerColor.BLUE: 1>, Coord(r=8, c=4): <PlayerColor.BLUE: 1>, Coord(r=8, c=6): <PlayerColor.BLUE: 1>, Coord(r=8, c=7): <PlayerColor.BLUE: 1>, Coord(r=9, c=4): <PlayerColor.BLUE: 1>, Coord(r=9, c=7): <PlayerColor.BLUE: 1>, Coord(r=10, c=4): <PlayerColor.BLUE: 1>, Coord(r=10, c=6): <PlayerColor.BLUE: 1>, Coord(r=10, c=7): <PlayerColor.BLUE: 1>}, parent_cell=Coord(r=5, c=5), parent_node=None)]
+ORIGINAL QUEUE LEN: 2
+
+POP
+COUNT: 0
+PLACE(None, None, None, 5-5)
+PATHCOST: 0
+AXIS: vertical_fill
+Heuristic_cost: 5
+List of actions: [PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5))]
+1
+flatten_lst: [Coord(r=5, c=5)]
+. . . . . . b b . . . 
+. . . . b . b b . . . 
+. . . . b . b b . . . 
+. . . . b . b . . . . 
+. . . . b . b . . . . 
+. . . . b r b . . . . 
+. . . . b . b . . . . 
+. . . . b . b B . . . 
+. . . . b . b b . . . 
+. . . . b . . b . . . 
+. . . . b . b b . . . 
+
+best_k_cells: [Coord(r=5, c=5)]
+
+POP
+COUNT: 1
+PLACE(4-5, 3-5, 2-5, 1-5)
+PATHCOST: 1
+AXIS: vertical_fill
+Heuristic_cost: 5
+List of actions: [PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5)), PlaceAction(c1=Coord(r=4, c=5), c2=Coord(r=3, c=5), c3=Coord(r=2, c=5), c4=Coord(r=1, c=5))]
+2
+flatten_lst: [Coord(r=5, c=5), Coord(r=4, c=5), Coord(r=2, c=5), Coord(r=3, c=5), Coord(r=1, c=5)]
+. . . . . . b b . . . 
+. . . . b r b b . . . 
+. . . . b r b b . . . 
+. . . . b r b . . . . 
+. . . . b r b . . . . 
+. . . . b r b . . . . 
+. . . . b . b . . . . 
+. . . . b . b B . . . 
+. . . . b . b b . . . 
+. . . . b . . b . . . 
+. . . . b . b b . . . 
+
+best_k_cells: [Coord(r=1, c=5), Coord(r=3, c=5), Coord(r=2, c=5), Coord(r=4, c=5), Coord(r=5, c=5)]
+
+POP
+COUNT: 2
+PLACE(9-6, 9-5, 10-5, 0-5)
+PATHCOST: 2
+AXIS: vertical_fill
+Heuristic_cost: 4
+List of actions: [PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5)), PlaceAction(c1=Coord(r=4, c=5), c2=Coord(r=3, c=5), c3=Coord(r=2, c=5), c4=Coord(r=1, c=5)), PlaceAction(c1=Coord(r=9, c=6), c2=Coord(r=9, c=5), c3=Coord(r=10, c=5), c4=Coord(r=0, c=5))]
+8
+. . . . . r b b . . . 
+. . . . b r b b . . . 
+. . . . b r b b . . . 
+. . . . b r b . . . . 
+. . . . b r b . . . . 
+. . . . b r b . . . . 
+. . . . b . b . . . . 
+. . . . b . b b . . . 
+. . . . b . b b . . . 
+. . . . b r r b . . . 
+. . . . b r b b . . . 
+
+{Coord(r=9, c=6), Coord(r=4, c=6), Coord(r=0, c=6), Coord(r=7, c=6), Coord(r=2, c=6), Coord(r=5, c=6), Coord(r=8, c=6), Coord(r=3, c=6), Coord(r=6, c=6), Coord(r=1, c=6), Coord(r=10, c=6)}
+FINALLY BITCH
+flatten_lst: [Coord(r=5, c=5), Coord(r=4, c=5), Coord(r=2, c=5), Coord(r=3, c=5), Coord(r=1, c=5), Coord(r=9, c=5), Coord(r=10, c=5), Coord(r=0, c=5)]
+. . . . . r . b . . . 
+. . . . b r . b . . . 
+. . . . b r . b . . . 
+. . . . b r . . . . . 
+. . . . b r . . . . . 
+. . . . b r . . . . . 
+. . . . b . . . . . . 
+. . . . b . . B . . . 
+. . . . b . . b . . . 
+. . . . b r . b . . . 
+. . . . b r . b . . . 
+
+best_k_cells: [Coord(r=0, c=5), Coord(r=10, c=5), Coord(r=9, c=5), Coord(r=1, c=5), Coord(r=3, c=5), Coord(r=2, c=5), Coord(r=4, c=5), Coord(r=5, c=5)]
+
+POP
+COUNT: 3
+PLACE(None, None, None, 5-5)
+PATHCOST: 0
+AXIS: horizontal_fill
+Heuristic_cost: 9
+List of actions: [PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5))]
+129
+flatten_lst: [Coord(r=5, c=5)]
+. . . . . . b b . . . 
+. . . . b . b b . . . 
+. . . . b . b b . . . 
+. . . . b . b . . . . 
+. . . . b . b . . . . 
+. . . . b r b . . . . 
+. . . . b . b . . . . 
+. . . . b . b B . . . 
+. . . . b . b b . . . 
+. . . . b . . b . . . 
+. . . . b . b b . . . 
+
+best_k_cells: [Coord(r=5, c=5)]
+
+POP
+COUNT: 4
+PLACE(6-5, 7-5, 8-5, 9-5)
+PATHCOST: 1
+AXIS: horizontal_fill
+Heuristic_cost: 7
+List of actions: [PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5)), PlaceAction(c1=Coord(r=6, c=5), c2=Coord(r=7, c=5), c3=Coord(r=8, c=5), c4=Coord(r=9, c=5))]
+130
+flatten_lst: [Coord(r=5, c=5), Coord(r=9, c=5), Coord(r=7, c=5), Coord(r=8, c=5), Coord(r=6, c=5)]
+. . . . . . b b . . . 
+. . . . b . b b . . . 
+. . . . b . b b . . . 
+. . . . b . b . . . . 
+. . . . b . b . . . . 
+. . . . b r b . . . . 
+. . . . b r b . . . . 
+. . . . b r b B . . . 
+. . . . b r b b . . . 
+. . . . b r . b . . . 
+. . . . b . b b . . . 
+
+best_k_cells: [Coord(r=6, c=5), Coord(r=8, c=5), Coord(r=7, c=5), Coord(r=9, c=5), Coord(r=5, c=5)]
+
+POP
+COUNT: 5
+PLACE(6-5, 7-5, 8-5, 9-5)
+PATHCOST: 1
+AXIS: vertical_fill
+Heuristic_cost: 5
+List of actions: [PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5)), PlaceAction(c1=Coord(r=6, c=5), c2=Coord(r=7, c=5), c3=Coord(r=8, c=5), c4=Coord(r=9, c=5))]
+133
+flatten_lst: [Coord(r=5, c=5), Coord(r=9, c=5), Coord(r=7, c=5), Coord(r=8, c=5), Coord(r=6, c=5)]
+. . . . . . b b . . . 
+. . . . b . b b . . . 
+. . . . b . b b . . . 
+. . . . b . b . . . . 
+. . . . b . b . . . . 
+. . . . b r b . . . . 
+. . . . b r b . . . . 
+. . . . b r b B . . . 
+. . . . b r b b . . . 
+. . . . b r . b . . . 
+. . . . b . b b . . . 
+
+best_k_cells: [Coord(r=6, c=5), Coord(r=8, c=5), Coord(r=7, c=5), Coord(r=9, c=5), Coord(r=5, c=5)]
+
+POP
+COUNT: 6
+PLACE(4-5, 3-5, 2-5, 1-5)
+PATHCOST: 2
+AXIS: vertical_fill
+Heuristic_cost: 5
+List of actions: [PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5)), PlaceAction(c1=Coord(r=6, c=5), c2=Coord(r=7, c=5), c3=Coord(r=8, c=5), c4=Coord(r=9, c=5)), PlaceAction(c1=Coord(r=4, c=5), c2=Coord(r=3, c=5), c3=Coord(r=2, c=5), c4=Coord(r=1, c=5))]
+136
+flatten_lst: [Coord(r=5, c=5), Coord(r=9, c=5), Coord(r=7, c=5), Coord(r=8, c=5), Coord(r=6, c=5), Coord(r=4, c=5), Coord(r=2, c=5), Coord(r=3, c=5), Coord(r=1, c=5)]
+. . . . . . b b . . . 
+. . . . b r b b . . . 
+. . . . b r b b . . . 
+. . . . b r b . . . . 
+. . . . b r b . . . . 
+. . . . b r b . . . . 
+. . . . b r b . . . . 
+. . . . b r b B . . . 
+. . . . b r b b . . . 
+. . . . b r . b . . . 
+. . . . b . b b . . . 
+
+best_k_cells: [Coord(r=1, c=5), Coord(r=3, c=5), Coord(r=2, c=5), Coord(r=4, c=5), Coord(r=6, c=5), Coord(r=8, c=5), Coord(r=7, c=5), Coord(r=9, c=5), Coord(r=5, c=5)]
+
+POP
+COUNT: 7
+PLACE(3-7, 3-6, 2-6, 4-6)
+PATHCOST: 3
+AXIS: vertical_fill
+Heuristic_cost: 3
+List of actions: [PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5)), PlaceAction(c1=Coord(r=4, c=5), c2=Coord(r=3, c=5), c3=Coord(r=2, c=5), c4=Coord(r=1, c=5)), PlaceAction(c1=Coord(r=9, c=6), c2=Coord(r=9, c=5), c3=Coord(r=10, c=5), c4=Coord(r=0, c=5)), PlaceAction(c1=Coord(r=3, c=7), c2=Coord(r=3, c=6), c3=Coord(r=2, c=6), c4=Coord(r=4, c=6))]
+140
+flatten_lst: [Coord(r=5, c=5), Coord(r=4, c=5), Coord(r=2, c=5), Coord(r=3, c=5), Coord(r=1, c=5), Coord(r=9, c=5), Coord(r=10, c=5), Coord(r=0, c=5), Coord(r=3, c=7), Coord(r=4, c=6), Coord(r=2, c=6), Coord(r=3, c=6)]
+. . . . . r . b . . . 
+. . . . b r . b . . . 
+. . . . b r r b . . . 
+. . . . b r r r . . . 
+. . . . b r r . . . . 
+. . . . b r . . . . . 
+. . . . b . . . . . . 
+. . . . b . . B . . . 
+. . . . b . . b . . . 
+. . . . b r . b . . . 
+. . . . b r . b . . . 
+
+best_k_cells: [Coord(r=3, c=6), Coord(r=2, c=6), Coord(r=4, c=6), Coord(r=3, c=7), Coord(r=0, c=5), Coord(r=10, c=5), Coord(r=9, c=5), Coord(r=1, c=5), Coord(r=3, c=5), Coord(r=2, c=5), Coord(r=4, c=5)]
+
+POP
+COUNT: 8
+PLACE(6-8, 6-7, 5-7, 4-7)
+PATHCOST: 4
+AXIS: vertical_fill
+Heuristic_cost: 0
+List of actions: [PlaceAction(c1=None, c2=None, c3=None, c4=Coord(r=5, c=5)), PlaceAction(c1=Coord(r=4, c=5), c2=Coord(r=3, c=5), c3=Coord(r=2, c=5), c4=Coord(r=1, c=5)), PlaceAction(c1=Coord(r=9, c=6), c2=Coord(r=9, c=5), c3=Coord(r=10, c=5), c4=Coord(r=0, c=5)), PlaceAction(c1=Coord(r=3, c=7), c2=Coord(r=3, c=6), c3=Coord(r=2, c=6), c4=Coord(r=4, c=6)), PlaceAction(c1=Coord(r=6, c=8), c2=Coord(r=6, c=7), c3=Coord(r=5, c=7), c4=Coord(r=4, c=7))]
+245
+. . . . . r . b . . . 
+. . . . b r . b . . . 
+. . . . b r r b . . . 
+. . . . b r r r . . . 
+. . . . b r r r . . . 
+. . . . b r . r . . . 
+. . . . b . . r r . . 
+. . . . b . . b . . . 
+. . . . b . . b . . . 
+. . . . b r . b . . . 
+. . . . b r . b . . . 
+
+{Coord(r=0, c=7), Coord(r=7, c=7), Coord(r=2, c=7), Coord(r=8, c=7), Coord(r=3, c=7), Coord(r=10, c=7), Coord(r=5, c=7), Coord(r=6, c=7), Coord(r=1, c=7), Coord(r=9, c=7), Coord(r=4, c=7)}
+FINALLY BITCH
+SOLUTION FOUND
+4
+. . . . . r . . . . . 
+. . . . b r . . . . . 
+. . . . b r r . . . . 
+. . . . b r r . . . . 
+. . . . b r r . . . . 
+. . . . b r . . . . . 
+. . . . b . . . r . . 
+. . . . b . . . . . . 
+. . . . b . . . . . . 
+. . . . b r . . . . . 
+. . . . b r . . . . . 
+
+Program execution time: 0.18 seconds
+$SOLUTION PLACE(4-5, 3-5, 2-5, 1-5)
+$SOLUTION PLACE(9-6, 9-5, 10-5, 0-5)
+$SOLUTION PLACE(3-7, 3-6, 2-6, 4-6)
+$SOLUTION PLACE(6-8, 6-7, 5-7, 4-7)
